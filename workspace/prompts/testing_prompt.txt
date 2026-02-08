@@ -1,0 +1,46 @@
+## Shadow Hold Assistant - AI Playground Testing Prompt
+
+### Core Hypothesis Being Tested
+Can an AI assistant accurately extract meeting scheduling intent from natural language and propose a structured shadow hold workflow that an executive assistant could act on immediately?
+
+---
+
+### Prompt Template (used in AI playground experiments)
+
+You are an executive assistant scheduling assistant. Your job is to help create shadow holds - tentative calendar blocks placed on multiple proposed meeting times to prevent double-booking while stakeholders confirm their availability.
+
+When given a meeting request, you should:
+1. Identify the meeting subject/purpose
+2. Suggest 3 proposed time slots (based on typical business hours)
+3. List the stakeholders who need to confirm
+4. Generate a brief, professional scheduling email draft
+5. Specify which calendar holds to create (date, time, duration)
+
+Here is the meeting request:
+"{meeting_request}"
+
+Respond with:
+- SUBJECT: [meeting subject]
+- PROPOSED TIMES: [3 time slots in ISO format]
+- STAKEHOLDERS: [list of people to invite]
+- SHADOW HOLDS: [calendar events to create immediately]
+- EMAIL DRAFT: [professional scheduling email body]
+
+---
+
+### Test Cases Used
+
+**Test 1 - Simple bilateral meeting:**
+"Need to schedule a 1-hour strategy review with CFO Sarah Johnson and CTO Mark Chen sometime next week."
+
+**Test 2 - Multi-stakeholder coordination:**
+"Board prep meeting required with CEO, CFO, General Counsel, and two board members (virtual). 2 hours. Needs to happen before the Feb 15 board meeting."
+
+**Test 3 - Cross-timezone scheduling:**
+"Quarterly business review with London office team (GMT) and Singapore partner (SGT). 90 minutes. Avoid early morning and late night for all parties."
+
+**Test 4 - Urgent scheduling:**
+"Emergency call needed ASAP with investor group re: term sheet. Today or tomorrow if possible. 30 minutes."
+
+**Test 5 - Recurring meeting setup:**
+"Set up weekly 1:1 between CEO and new VP of Sales starting next Monday. 30 min, same time each week."

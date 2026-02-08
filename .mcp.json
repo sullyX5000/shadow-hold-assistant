@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sherpa-b": {
+      "type": "http",
+      "url": "https://sherpa-b.ai.science/mcp",
+      "headers": {
+        "x-api-key": "sk_live_dq94W_8KoPpgoH3c6NTM2hErMf_QfHa53jIzv-LJYBg",
+        "x-repo-id": "ai-agent-bootcamp-2601"
+      }
+    }
+  }
+}
