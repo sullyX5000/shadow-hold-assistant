@@ -1,0 +1,60 @@
+# Interview Analysis Prompt - Shadow Hold Assistant
+
+Paste this prompt into Claude or ChatGPT along with your interview transcript/notes.
+
+---
+
+## Context
+
+I'm building an AI-powered scheduling assistant for Executive Assistants called the Shadow Hold Assistant. It automates calendar coordination - creating tentative holds, drafting scheduling emails, and tracking responses.
+
+My primary quality risk is: **Scheduling quality and preference awareness** - whether the system can make scheduling decisions that respect individual working preferences (soft constraints), not just calendar availability (hard constraints).
+
+## Your Task
+
+Analyze the following interview transcript/notes from a conversation with an Executive Assistant. Extract structured insights focused on:
+
+1. **Scheduling workflow** - How they currently handle meeting coordination step by step
+2. **Soft constraints** - Unwritten rules, preferences, and judgment calls they make
+3. **Pain points** - What causes friction, errors, or wasted time
+4. **Tool gaps** - What their current tools (Cabinet, Outlook, etc.) don't do well
+5. **Trust boundaries** - What they'd let a tool do vs. what they must control
+6. **Priority rules** - How they decide who gets favorable times when there's no perfect option
+
+## Output Format
+
+### Key Findings
+For each finding, include:
+- **Insight:** One sentence summary
+- **Evidence:** Direct quote or specific detail from the interview
+- **Implication for design:** What this means for how the tool should work
+
+### Soft Constraint Rules Discovered
+List every unwritten "rule" mentioned or implied, formatted as:
+- IF [condition] THEN [what the EA does]
+- Example: IF client/external stakeholder THEN they get preferred time slot
+
+### Pain Point Priority
+Rank pain points by severity (based on emotional intensity and frequency mentioned):
+1. [Most painful]
+2. [Next]
+3. [etc.]
+
+### Competitive Gaps (Cabinet/Current Tools)
+What the current solution fails at - these are opportunities:
+- [Gap 1]
+- [Gap 2]
+
+### Trust Model
+- What the EA wants the tool to DO automatically:
+- What the EA wants the tool to SUGGEST for approval:
+- What the EA wants the tool to NEVER do:
+
+### Surprising or Unexpected Insights
+Anything that challenges assumptions or reveals something non-obvious.
+
+---
+
+## Interview Transcript/Notes
+
+[PASTE YOUR INTERVIEW NOTES HERE]
