@@ -1,0 +1,15 @@
+# MCP server config (contains API keys)
+.mcp.json
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+
+# Node
+node_modules/
+
+# n8n local data
+n8n_data/
